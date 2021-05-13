@@ -41,8 +41,8 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Quicksand', sans-serif;
-  font-size: 20px;
-  letter-spacing: 1px;
+  font-size: 20x;
+  letter-spacing: -0.5px;
   /* color: #778298;  */
   color: black;
   width: 100%;
@@ -65,7 +65,7 @@ body {
   }
 }
 
-.login > header {
+.login > .main-heading {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,20 +127,60 @@ body {
   -webkit-appearance: none;
   appearance: none;
   border: 1px solid black;
-  background-color: transparent;
+  background-color: transparent !important;
   border-radius: 0;
-  transition: none;
+  transition: none !important;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: transparent !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.1rem black;
 }
 
 .btn-info {
   color: #fff;
-  background-color: black;
+  /* background-color: black; */
   border: none;
 }
 
-.btn {
+.searchbtn {
+  margin-top: 10px;
   letter-spacing: 1px;
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 999px;
+  padding: 0 50px;
+  min-height: 44px;
+  min-width: 150px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 0 56px;
+  letter-spacing: 3px;
+  transition: background-color 200ms
 }
+
+/* .button {
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 999px;
+  padding: 0 60px;
+  min-height: 54px;
+  min-width: 160px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0 56px;
+  letter-spacing: 3px;
+  transition: background-color 200ms
+} */
 
 .login {
   display: flex;
@@ -150,7 +190,21 @@ body {
 }
 
 .login .btn {
-  font-size: 1.2rem;
+  letter-spacing: 1px;
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 999px;
+  padding: 0 50px;
+  min-height: 44px;
+  min-width: 150px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 0 56px;
+  letter-spacing: 3px;
+  transition: background-color 200ms
 }
 
 .main {

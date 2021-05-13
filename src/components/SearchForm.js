@@ -26,7 +26,7 @@ const SearchForm = (props) => {
       <Form  className="form" onSubmit={handleSearch}>
         {errorMsg && <p className="errorMsg">{errorMsg}</p>}
         <Form.Group controlId="formBasicEmail">
-          <Form.Label>Enter search term</Form.Label>
+          {/* <Form.Label>Enter search term</Form.Label> */}
           <Form.Control
           className="form_control"
             type="search"
@@ -37,7 +37,7 @@ const SearchForm = (props) => {
             autoComplete="off"
           />
         </Form.Group>
-        <Button variant="info" type="submit">
+        <Button className="searchbtn" variant="info" type="submit">
           Search
         </Button>
       </Form>
