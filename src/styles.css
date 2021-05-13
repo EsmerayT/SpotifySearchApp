@@ -4,17 +4,40 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: 'Sporting Grotesque';
-  font-weight: bold;
-  font-style: normal;
-  src: url('https://files.cargocollective.com/c597238/Sporting_Grotesque-Bold_web.woff') format('woff');
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
+@font-face {
+  font-family: "VersatileOutline-Bold";
+  src: url("//db.onlinewebfonts.com/t/cc6289b84357b8d34b7b79656ced51e1.eot");
+  src: url("//db.onlinewebfonts.com/t/cc6289b84357b8d34b7b79656ced51e1.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/cc6289b84357b8d34b7b79656ced51e1.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/cc6289b84357b8d34b7b79656ced51e1.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/cc6289b84357b8d34b7b79656ced51e1.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/cc6289b84357b8d34b7b79656ced51e1.svg#VersatileOutline-Bold")
+      format("svg");
+}
+
+@font-face {
+  font-family: "Versatile-Bold";
+  src: url("//db.onlinewebfonts.com/t/cb2f7b6a6fdfdf8fa5a0ca69d0e11f0b.eot");
+  src: url("//db.onlinewebfonts.com/t/cb2f7b6a6fdfdf8fa5a0ca69d0e11f0b.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/cb2f7b6a6fdfdf8fa5a0ca69d0e11f0b.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/cb2f7b6a6fdfdf8fa5a0ca69d0e11f0b.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/cb2f7b6a6fdfdf8fa5a0ca69d0e11f0b.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/cb2f7b6a6fdfdf8fa5a0ca69d0e11f0b.svg#Versatile-Bold")
+      format("svg");
+}
+
 body {
- margin: 0;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Quicksand', sans-serif;
@@ -22,24 +45,24 @@ body {
   letter-spacing: 1px;
   /* color: #778298;  */
   color: black;
-  width:100%;
+  width: 100%;
   height: 100%;
-background: linear-gradient(-45deg, #c3cbd8, #c3dbce, #ddc3cd, #d0c2ad);
-background-size: 600% 100%;
-animation: gradient 20s ease infinite;
+  background: linear-gradient(-45deg, #c3cbd8, #c3dbce, #ddc3cd, #d0c2ad);
+  background-size: 600% 100%;
+  animation: gradient 20s ease infinite;
   animation-direction: alternate;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* body {
@@ -50,12 +73,32 @@ animation: gradient 20s ease infinite;
 	animation: gradient 30s ease infinite;
     animation-direction: alternate;
 } */
+.main-heading {
+  margin-left: 50px;
+}
 
+.spotify_logo {
+  margin-top: -10px;
+}
+.spotify {
+  font-family: "VersatileOutline-Bold";
+  letter-spacing: 0;
+  font-size: 60px;
+  margin-left: 20px;
+  /* margin-top: 100px; */
+}
+
+.search {
+  font-family: "Versatile-Bold";
+  letter-spacing: -2px;
+  font-size: 60px;
+  font-weight: 800;
+}
 
 .form {
   -webkit-appearance: none;
-      appearance: none;
-      background-color: transparent;
+  appearance: none;
+  background-color: transparent;
 }
 
 /* .form-control {
@@ -197,7 +240,7 @@ animation: gradient 20s ease infinite;
   letter-spacing: 1px;
   font-weight: bold;
   color: black;
-  border: 1px solid black;
+  border: 1.5px solid black;
   border-radius: 0;
 }
 
@@ -214,6 +257,7 @@ animation: gradient 20s ease infinite;
 }
 
 .card {
+  background-color: black;
   margin: 1rem;
   box-shadow: 0 2px 7px 3px #949ca5;
 }
