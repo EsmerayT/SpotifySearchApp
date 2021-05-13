@@ -4,16 +4,89 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Sporting Grotesque';
+  font-weight: bold;
+  font-style: normal;
+  src: url('https://files.cargocollective.com/c597238/Sporting_Grotesque-Bold_web.woff') format('woff');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
 body {
-  margin: 0;
+ margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #f3f4f6;
-  font-family: 'Montserrat', -apple-system, system-ui, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 20px;
   letter-spacing: 1px;
-  color: #778298;
+  /* color: #778298;  */
+  color: black;
+  width:100%;
+  height: 100%;
+background: linear-gradient(-45deg, #c3cbd8, #c3dbce, #ddc3cd, #d0c2ad);
+background-size: 600% 100%;
+animation: gradient 20s ease infinite;
+  animation-direction: alternate;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* body {
+	width:100%;
+    height: 100%;
+	background: linear-gradient(-45deg, #c3cbd8, #c3dbce, #ddc3cd, #d0c2ad);
+	background-size: 600% 100%;
+	animation: gradient 30s ease infinite;
+    animation-direction: alternate;
+} */
+
+
+.form {
+  -webkit-appearance: none;
+      appearance: none;
+      background-color: transparent;
+}
+
+/* .form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid black;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+} */
+
+.form_control {
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid black;
+  background-color: transparent;
+  border-radius: 0;
+  transition: none;
+}
+
+.btn-info {
+  color: #fff;
+  background-color: black;
+  border: none;
 }
 
 .btn {
@@ -123,7 +196,9 @@ body {
   font-size: 1.2rem;
   letter-spacing: 1px;
   font-weight: bold;
-  color: #778298;
+  color: black;
+  border: 1px solid black;
+  border-radius: 0;
 }
 
 .search-buttons .btn:focus {
@@ -167,6 +242,3 @@ body {
     text-align: center;
   }
 }
-
-
-
