@@ -143,9 +143,11 @@ body {
 
 .btn-info {
   color: #fff;
-  /* background-color: black; */
-  border: none;
+  background-color: black !important;
+  border-color: black !important;
 }
+
+
 
 .searchbtn {
   margin-top: 10px;
